@@ -8,7 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Description:
  * Date: 2019/2/26
  */
-@SpringBootApplication
+@SpringBootApplication(
+        scanBasePackages = "com.bonjourcs.java.spring.boot.security.*"
+)
 public class SecurityApplication {
 
     public static void main(String... args) {
