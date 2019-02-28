@@ -29,4 +29,9 @@ public class ApiController {
         return retObj;
     }
 
+    @GetMapping("/errors")
+    public RetObj<String> error() {
+        int num = 10 / 0;
+        return new RetObj<>();
+    }
 }
