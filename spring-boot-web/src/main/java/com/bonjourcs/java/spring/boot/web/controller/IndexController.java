@@ -1,5 +1,6 @@
 package com.bonjourcs.java.spring.boot.web.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @GetMapping("/index")
+    @ApiOperation(value = "index controller")
     public String getIndex() {
         return "HELLO";
     }

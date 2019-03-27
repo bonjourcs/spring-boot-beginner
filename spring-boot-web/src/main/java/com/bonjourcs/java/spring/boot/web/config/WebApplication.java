@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Description:
  * Date: 2018/8/15
  */
-@SpringBootApplication(scanBasePackages = {"com.bonjourcs.java.spring.boot.web"})
+@SpringBootApplication(scanBasePackages = {"com.bonjourcs.java.spring.boot"})
 public class WebApplication {
 
     public static void main(String... args) {
