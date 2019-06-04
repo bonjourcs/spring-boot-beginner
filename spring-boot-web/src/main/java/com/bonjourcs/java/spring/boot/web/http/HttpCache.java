@@ -30,7 +30,7 @@ public class HttpCache {
         }
 
         return ResponseEntity.ok()
-                .eTag("60")
+                .eTag("10")
                 .body("OK");
     }
 
