@@ -1,4 +1,4 @@
-package com.bonjourcs.java.spring.boot.web.model;
+package com.bonjourcs.java.spring.boot.web.model.vo;
 
 import com.bonjourcs.java.spring.boot.web.constraint.OrderConstraint;
 import lombok.Data;

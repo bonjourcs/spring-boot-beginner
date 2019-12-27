@@ -1,4 +1,4 @@
-package com.bonjourcs.java.spring.boot.web.model;
+package com.bonjourcs.java.spring.boot.web.model.common;
 
 import lombok.Data;
 
