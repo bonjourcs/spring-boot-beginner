@@ -1,6 +1,6 @@
 package com.bonjourcs.java.spring.boot.web.exception;
 
-import com.bonjourcs.java.spring.boot.web.model.RetObj;
+import com.bonjourcs.java.spring.boot.web.model.common.RetObj;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;

@@ -1,7 +1,7 @@
 package com.bonjourcs.java.spring.boot.web.controller;
 
-import com.bonjourcs.java.spring.boot.web.model.Foo;
-import com.bonjourcs.java.spring.boot.web.model.RetObj;
+import com.bonjourcs.java.spring.boot.web.model.vo.Foo;
+import com.bonjourcs.java.spring.boot.web.model.common.RetObj;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
