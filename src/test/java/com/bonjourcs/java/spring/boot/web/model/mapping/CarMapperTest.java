@@ -17,9 +17,11 @@ public class CarMapperTest {
 
         CarVo carVo = new CarVo();
         carVo.setId("1");
+        carVo.setPrice(12.00);
 
         CarDto dto = CarMapper.CAR_MAPPER.carVoToDto(carVo);
         Assert.assertEquals("1", dto.getCarId());
+        Assert.assertEquals("$12.00", dto.getPrice());
 
 
     }

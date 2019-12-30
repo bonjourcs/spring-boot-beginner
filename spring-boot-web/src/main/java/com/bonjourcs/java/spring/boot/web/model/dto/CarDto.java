@@ -14,4 +14,8 @@ public class CarDto implements Serializable {
 
     private String carId;
 
+    private String price;
+
+    private String date;
+
 }

@@ -23,6 +23,8 @@ public interface CarMapper {
      * @return converted car dto
      */
     @Mapping(source = "id", target = "carId")
+    @Mapping(source = "price", target = "price", numberFormat = "$#.00")
+    @Mapping(source = "date", target = "date", dateFormat = "yyyy-MM-dd")
     CarDto carVoToDto(CarVo carVo);
 
 }
