@@ -36,6 +36,7 @@ public class PersonMapperTest {
         carVo.setPrice(12.00);
         carVo.setId("12");
         carVo.setDate(new Date(System.currentTimeMillis()));
+        vo.setCarVo(carVo);
 
         PersonDto dto = personMapper.personToDto(vo);
         Assert.assertEquals("Tom", dto.getPName());
