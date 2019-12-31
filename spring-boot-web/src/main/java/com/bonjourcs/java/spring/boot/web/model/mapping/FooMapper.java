@@ -10,7 +10,7 @@ import org.mapstruct.factory.Mappers;
  * Description:
  * Date: 2019/12/31
  */
-@Mapper
+@Mapper(uses = DateMappingUtils.class)
 public interface FooMapper {
 
     FooMapper INSTANCE = Mappers.getMapper(FooMapper.class);

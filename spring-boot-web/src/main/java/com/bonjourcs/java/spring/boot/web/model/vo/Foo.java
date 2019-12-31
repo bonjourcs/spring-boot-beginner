@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author Liang Chenghao
@@ -19,5 +20,7 @@ public class Foo implements Serializable {
     private String orderNum;
 
     private Integer size;
+
+    private Date date;
 
 }

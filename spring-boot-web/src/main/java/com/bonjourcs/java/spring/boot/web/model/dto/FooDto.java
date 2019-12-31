@@ -16,4 +16,6 @@ public class FooDto implements Serializable {
 
     private int size;
 
+    private String date;
+
 }
