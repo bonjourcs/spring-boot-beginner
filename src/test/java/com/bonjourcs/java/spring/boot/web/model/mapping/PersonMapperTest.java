@@ -40,7 +40,7 @@ public class PersonMapperTest {
 
         PersonDto dto = personMapper.personToDto(vo);
         Assert.assertEquals("Tom", dto.getPName());
-        System.out.println(dto);
+        Assert.assertEquals("12", dto.getCarDto().getCarId());
 
     }
 }
