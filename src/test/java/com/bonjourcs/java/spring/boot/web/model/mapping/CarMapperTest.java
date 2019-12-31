@@ -1,7 +1,9 @@
 package com.bonjourcs.java.spring.boot.web.model.mapping;
 
 import com.bonjourcs.java.spring.boot.web.model.dto.CarDto;
+import com.bonjourcs.java.spring.boot.web.model.dto.PersonDto;
 import com.bonjourcs.java.spring.boot.web.model.vo.CarVo;
+import com.bonjourcs.java.spring.boot.web.model.vo.PersonVo;
 import org.junit.Assert;
 import org.junit.Test;
 

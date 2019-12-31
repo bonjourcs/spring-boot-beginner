@@ -16,4 +16,6 @@ public class PersonVo implements Serializable {
 
     private Integer age;
 
+    private CarVo carVo;
+
 }

@@ -7,15 +7,13 @@ import java.io.Serializable;
 /**
  * @author Liang Chenghao
  * Description:
- * Date: 2019/12/27
+ * Date: 2019/12/31
  */
 @Data
-public class PersonDto implements Serializable {
+public class FooDto implements Serializable {
 
-    private String pName;
+    private String orderNum;
 
-    private Integer pAge;
-
-    private CarDto carDto;
+    private int size;
 
 }
