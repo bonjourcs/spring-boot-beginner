@@ -1,7 +1,9 @@
 package com.bonjourcs.java.spring.boot.web.model.mapping;
 
 import com.bonjourcs.java.spring.boot.web.model.dto.Animal;
+import com.bonjourcs.java.spring.boot.web.model.dto.Cat;
 import com.bonjourcs.java.spring.boot.web.model.vo.CrashVo;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -15,10 +17,12 @@ public class AnimalMapperTest {
     public void testGetAnimal(){
 
         CrashVo crashVo = new CrashVo();
-        crashVo.setName("crash");
+        crashVo.setName("4");
 
         Animal animal = AnimalMapper.INSTANCE.getAnimal(crashVo);
-        System.out.println(animal);
+        boolean isCat = animal instanceof Cat;
+        Assert.assertTrue(isCat);
+
 
     }
 }

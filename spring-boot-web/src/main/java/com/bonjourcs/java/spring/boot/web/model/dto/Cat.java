@@ -28,4 +28,14 @@ public class Cat extends Animal {
         }
     }
 
+    public int getPows() {
+
+        String name = super.getName();
+        if (name != null && name.matches(intRegexp)) {
+            return Integer.parseInt(name);
+        }
+
+        return 0;
+    }
+
 }
