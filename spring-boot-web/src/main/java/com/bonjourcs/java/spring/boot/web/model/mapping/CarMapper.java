@@ -11,7 +11,7 @@ import org.mapstruct.factory.Mappers;
  * Description:
  * Date: 2019/12/27
  */
-@Mapper
+@Mapper(uses = DtoFactory.class)
 public interface CarMapper {
 
     CarMapper CAR_MAPPER = Mappers.getMapper(CarMapper.class);
