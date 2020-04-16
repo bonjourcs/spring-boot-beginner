@@ -81,7 +81,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.bonjourcs.java.spring.boot.web.config.WebApplication</mainClass>
+                    <mainClass>com.bonjourcs.java.spring.boot.web.WebApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

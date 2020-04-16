@@ -1,0 +1,9 @@
+spring:
+  banner:
+    image:
+      location: images\wechat.png
+application:
+  name: DEV
+env:
+  name: ENV-DEV
+  require: false

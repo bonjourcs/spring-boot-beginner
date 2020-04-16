@@ -1,6 +1,6 @@
 package com.bonjourcs.java.spring.boot.web.model.mapping;
 
-import com.bonjourcs.java.spring.boot.web.config.WebApplication;
+import com.bonjourcs.java.spring.boot.web.WebApplication;
 import com.bonjourcs.java.spring.boot.web.model.dto.PersonDto;
 import com.bonjourcs.java.spring.boot.web.model.vo.CarVo;
 import com.bonjourcs.java.spring.boot.web.model.vo.PersonVo;
@@ -12,8 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Liang Chenghao
