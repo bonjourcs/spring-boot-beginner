@@ -6,4 +6,17 @@ application:
   name: DEV
 env:
   name: ENV-DEV
+  max-length: 100
   require: false
+  security:
+    username: admin
+    password: password
+    roles:
+      - USER
+      - ADMIN
+      - SUPER_ADMIN
+my:
+  servers:
+    - dev.bonjourcs.com
+    - tools.bonjourcs.com
+    - open.bonjourcs.com

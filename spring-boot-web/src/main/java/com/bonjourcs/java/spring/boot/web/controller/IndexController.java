@@ -1,6 +1,7 @@
 package com.bonjourcs.java.spring.boot.web.controller;
 
 import com.bonjourcs.java.spring.boot.web.config.bean.EnvProperties;
+import com.bonjourcs.java.spring.boot.web.config.bean.MyServer;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,10 +22,20 @@ public class IndexController {
     @Autowired
     private EnvProperties envProperties;
 
+    @Autowired
+    private MyServer myServer;
+
     @GetMapping("/index")
     @ApiOperation(value = "index controller")
     public String getIndex() {
-        return "HELLO " + name + " " + envProperties.getName();
+        return "HELLO " + name + " " + envProperties.getName()
+                + " " + envProperties.getMaxLength()
+                + " " + String.join("-", myServer.getServers());
+    }
+
+    @GetMapping("/properties/env")
+    public EnvProperties getEnvProperties() {
+        return envProperties;
     }
 
 }
