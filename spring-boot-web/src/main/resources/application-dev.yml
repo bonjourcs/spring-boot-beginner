@@ -20,3 +20,14 @@ my:
     - dev.bonjourcs.com
     - tools.bonjourcs.com
     - open.bonjourcs.com
+  duration:
+    current-live: 10
+    time-to-live: 1000
+system:
+  period:
+    current-time: 22
+    time-to-live: 100
+
+properties:
+  weight:
+    max-weight: "1500"

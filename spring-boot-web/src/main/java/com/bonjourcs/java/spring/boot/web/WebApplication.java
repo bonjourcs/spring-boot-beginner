@@ -4,7 +4,6 @@ import com.bonjourcs.java.spring.boot.web.listener.ApplicationStartListener;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 /**
@@ -13,7 +12,6 @@ import org.springframework.context.annotation.Bean;
  * Date: 2018/8/15
  */
 @SpringBootApplication
-@EnableConfigurationProperties
 public class WebApplication {
 
     @Bean
