@@ -2,10 +2,13 @@ spring:
   security:
     user:
       password: weak
+  messages:
+    basename: i18n/messages
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration
 logging:
-  level:
-    web: ERROR
+  file:
+    name: boot-logging-file
+    path: /boot/web
 server:
   port: 18000
