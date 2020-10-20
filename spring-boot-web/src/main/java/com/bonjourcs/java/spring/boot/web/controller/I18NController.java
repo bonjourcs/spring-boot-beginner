@@ -18,7 +18,7 @@ public class I18NController {
     private MessageSource messageSource;
 
     @GetMapping("/i18n")
-    public String getI18NInfo(){
+    public String getI18NInfo() {
         return messageSource.getMessage("message.greeting", null, LocaleContextHolder.getLocale());
     }
 

@@ -4,8 +4,6 @@ spring:
       password: weak
   messages:
     basename: i18n/messages
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration
 logging:
   file:
     name: boot-logging-file
