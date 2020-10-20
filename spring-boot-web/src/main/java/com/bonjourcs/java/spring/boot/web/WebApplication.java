@@ -1,10 +1,9 @@
 package com.bonjourcs.java.spring.boot.web;
 
 import com.bonjourcs.java.spring.boot.web.listener.ApplicationStartListener;
-import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.context.annotation.Bean;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * @author Liang Chenghao
@@ -12,12 +11,8 @@ import org.springframework.context.annotation.Bean;
  * Date: 2018/8/15
  */
 @SpringBootApplication
+@EnableCaching
 public class WebApplication {
-
-    @Bean
-    public ExitCodeGenerator exit() {
-        return () -> 100;
-    }
 
     public static void main(String... args) {
         new SpringApplicationBuilder(WebApplication.class)
