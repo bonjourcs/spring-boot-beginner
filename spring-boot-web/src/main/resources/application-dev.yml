@@ -31,3 +31,8 @@ system:
 properties:
   weight:
     max-weight: "1500"
+server:
+  servlet:
+    session:
+      cookie:
+        name: WEB-SESSION-0
