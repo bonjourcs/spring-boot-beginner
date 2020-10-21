@@ -15,6 +15,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <java.build.version>1.8</java.build.version>
         <lombok.build.version>1.18.2</lombok.build.version>
+        <httpclient.version>4.5.13</httpclient.version>
     </properties>
 
     <artifactId>spring-boot-web</artifactId>
@@ -33,6 +34,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
